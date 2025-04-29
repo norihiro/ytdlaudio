@@ -112,7 +112,7 @@ def main():
     args = _get_args()
 
     if not args.workdir:
-        # pylint disbale=R1732
+        # pylint: disable=R1732
         workdir_inst = tempfile.TemporaryDirectory()
         args.workdir = workdir_inst.name
 
